@@ -2,23 +2,19 @@ paths:
   procesados: ${hydra:runtime.cwd}/../../data/processed/datos_procesados.csv
   limpios: ${hydra:runtime.cwd}/../../data/clean/datos_limpios.csv
   crudos: ${hydra:runtime.cwd}/../../data/raw/iniciativas_datos.csv
-
 preprocesado:
-  lw: True
-  pc: True
-  st: True
-  tk: True
-
+  lw: true
+  pc: true
+  st: true
+  tk: true
 mostrado:
-  matriz: True
-  grafos: True
-  estudio: False
-
+  matriz: true
+  grafos: true
+  estudio: false
 modelos:
   modelo: logistica
-
 pipeline:
-  preprocesado: True
-  balanceo: True
-  entrenamiento: True
-  testeo: False
+  preprocesado: false
+  balanceo: true
+  entrenamiento: true
+  testeo: false
